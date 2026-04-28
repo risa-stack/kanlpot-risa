@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knalpot Risa - Mastery dari Purbalingga</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-bg': '#000000', // Hitam Pekat
+                        'brand-card': '#111111', // Hitam Abu
+                        'brand-accent': '#00FF44', // Hijau Neon 
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        /* Font */
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-brand-bg text-gray-300 antialiased">
+
+    <nav class="sticky top-0 z-50 bg-brand-bg/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-brand-accent text-2xl">⚡</span>
+                <h1 class="text-2xl font-extrabold text-white tracking-tighter">KNALPOT<span class="text-brand-accent">.</span>RISA</h1>
+            </div>
+            <div class="flex items-center gap-6 text-sm font-semibold">
+                <a href="#katalog" class="hover:text-white transition">Katalog</a>
+                <a href="#custom" class="hover:text-white transition">Custom</a>
+                <a href="#kontak" class="hover:text-white transition">Order</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-24 px-6 border-b border-gray-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 border border-brand-accent/30 bg-brand-accent/10 px-4 py-1 rounded-full text-brand-accent text-xs font-bold mb-6 tracking-wide uppercase">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-accent opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-accent"></span>
+                </span>
+                Direct dari Pusatnya
+            </div>
+            <h2 class="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tighter leading-tight">
+                Mastery Knalpot Purbalingga. <span class="text-gray-600">Performa Tanpa Kompromi.</span>
+            </h2>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-12">
+                Purbalingga bukan sekadar kota; ini adalah <strong class="text-white">legenda hidup pengrajin knalpot Indonesia</strong>. Di sini, besi ditempa menjadi karya seni berperforma tinggi. Kami membawa keahlian otentik ini langsung ke kendaraan Anda, mobil maupun motor. Kualitas yang diakui, mastery yang tak tertandingi.
+            </p>
+            <div class="flex gap-4 justify-center">
+                <a href="#katalog" class="bg-white text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-gray-200 transition duration-300">Lihat Katalog</a>
+                <a href="#kontak" class="border border-gray-700 px-8 py-3 rounded-full font-bold text-sm hover:border-white hover:text-white transition duration-300">Hubungi Kami</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="katalog" class="py-24 px-6 bg-brand-card/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16 max-w-xl">
+                <h3 class="text-sm font-bold text-brand-accent uppercase tracking-widest mb-2">Katalog Produk</h3>
+                <p class="text-4xl font-extrabold text-white tracking-tight">Eksplorasi Performa & Suara.</p>
+                <p class="mt-4 text-gray-400">Pilih dari lini produk standar tinggi kami. Material premium, presisi tinggi.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <div class="group bg-brand-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand-accent transition-all duration-300 flex flex-col">
+                    <div class="h-64 bg-gray-900 overflow-hidden relative">
+                        <img src="img/mobilpajero.jpg.jpeg" alt="New Trinton Pajero N16 Full Set" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-gray-900 text-[10px] px-3 py-1 rounded-full text-gray-500 uppercase font-bold tracking-wider">Mobil</span>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2 uppercase tracking-tight">New Trinton Pajero N16 Full Set (Mobil)</h4>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Material Full Stainless,Menghasilkan suara diesel yang lebih berwibawa dan padat.</p>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-gray-800 pt-6">
+                            <span class="text-2xl font-extrabold text-white font-mono">Rp <span class="text-brand-accent">2.800.000</span></span>
+                            <a href="#kontak" class="text-brand-accent font-bold text-sm hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-brand-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand-accent transition-all duration-300 flex flex-col">
+                    <div class="h-64 bg-gray-900 overflow-hidden relative">
+                        <img src="img/mobilbrio.jpg.jpeg" alt="Donvep Fronvep Brio" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-gray-900 text-[10px] px-3 py-1 rounded-full text-gray-500 uppercase font-bold tracking-wider">Mobil</span>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2 uppercase tracking-tight">Downpipe Frontpipe Brio/Jazz lama (Mobil)</h4>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Material Stainless Steel,Mengurangi hambatan gas buang sehingga akselerasi lebih enteng dan tenaga (HP) meningkat, terutama pada putaran mesin tengah hingga atas.</p>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-gray-800 pt-6">
+                            <span class="text-2xl font-extrabold text-white font-mono">Rp <span class="text-brand-accent">900.000</span></span>
+                            <a href="#kontak" class="text-brand-accent font-bold text-sm hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="group bg-brand-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand-accent transition-all duration-300 flex flex-col">
+                    <div class="h-64 bg-gray-900 overflow-hidden relative">
+                        <img src="img/mobilinova.jpg.jpeg" alt="Inova 2 KD" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-gray-900 text-[10px] px-3 py-1 rounded-full text-gray-500 uppercase font-bold tracking-wider">Mobil</span>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2 uppercase tracking-tight">Full System Innova 2 KD</h4>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Material Stainless Steel,Menaikkan Horsepower (HP) dan Torsi secara instan karena hambatan gas buang berkurang drastis.</p>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-gray-800 pt-6">
+                            <span class="text-2xl font-extrabold text-white font-mono">Rp <span class="text-brand-accent">2.200.000</span></span>
+                            <a href="#kontak" class="text-brand-accent font-bold text-sm hover:underline">Detail</a>
+                        </div>
+                    </div>
+               </div> 
+
+               <div class="group bg-brand-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand-accent transition-all duration-300 flex flex-col">
+                    <div class="h-64 bg-gray-900 overflow-hidden relative">
+                        <img src="img/mobilhks.jpg.jpeg" alt="hks5" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-gray-900 text-[10px] px-3 py-1 rounded-full text-gray-500 uppercase font-bold tracking-wider">Mobil</span>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2 uppercase tracking-tight">HKS 5 inn suara bass kering</h4>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Material Stainless Steel,Bisa diaplikasikan ke berbagai jenis mobil (Sedan, Hatchback, atau MPV) dengan sedikit penyesuaian pada posisi pengelasan.</p>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-gray-800 pt-6">
+                            <span class="text-2xl font-extrabold text-white font-mono">Rp <span class="text-brand-accent">400.000</span></span>
+                            <a href="#kontak" class="text-brand-accent font-bold text-sm hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-brand-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand-accent transition-all duration-300 flex flex-col">
+                    <div class="h-64 bg-gray-900 overflow-hidden relative">
+                        <img src="img/mobilagya.jpg.jpeg" alt="downpipe agya 1000cc" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-gray-900 text-[10px] px-3 py-1 rounded-full text-gray-500 uppercase font-bold tracking-wider">Mobil</span>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2 uppercase tracking-tight">Downpipe Agya 1000cc</h4>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Material Stainless Steel,Membantu membuang panas mesin lebih cepat, menjaga suhu ruang mesin tetap optimal</p>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-gray-800 pt-6">
+                            <span class="text-2xl font-extrabold text-white font-mono">Rp <span class="text-brand-accent">400.000</span></span>
+                            <a href="#kontak" class="text-brand-accent font-bold text-sm hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-brand-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand-accent transition-all duration-300 flex flex-col">
+                    <div class="h-64 bg-gray-900 overflow-hidden relative">
+                        <img src="img/mobilbmw.jpg.jpeg" alt="Downpipe BMW F30" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-gray-900 text-[10px] px-3 py-1 rounded-full text-gray-500 uppercase font-bold tracking-wider">Mobil</span>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2 uppercase tracking-tight">Downpipe BMW F30</h4>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Material Stainless Steel,Menghasilkan suara knalpot yang lebih dalam dan "meledak" saat shifting atau deceleration (terutama jika dikombinasikan dengan fitur burble tune).</p>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-gray-800 pt-6">
+                            <span class="text-2xl font-extrabold text-white font-mono">Rp <span class="text-brand-accent">1.800.000</span></span>
+                            <a href="#kontak" class="text-brand-accent font-bold text-sm hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-brand-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand-accent transition-all duration-300 flex flex-col">
+                    <div class="h-64 bg-gray-900 overflow-hidden relative">
+                        <img src="img/mobilinnova2.jpg.jpeg" alt="downpipe innova reborn" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-gray-900 text-[10px] px-3 py-1 rounded-full text-gray-500 uppercase font-bold tracking-wider">Mobil</span>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2 uppercase tracking-tight">Downpipe Innova Reborn/VRZ</h4>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Material Stainless Steel,Memberikan karakter suara diesel yang lebih gahar dan "bersiul" (suara turbo lebih terdengar) tanpa terdengar pecah.</p>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-gray-800 pt-6">
+                            <span class="text-2xl font-extrabold text-white font-mono">Rp <span class="text-brand-accent">2.700.000</span></span>
+                            <a href="#kontak" class="text-brand-accent font-bold text-sm hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-brand-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand-accent transition-all duration-300 flex flex-col">
+                    <div class="h-64 bg-gray-900 overflow-hidden relative">
+                        <img src="img/mobilresonator.jpg.jpeg" alt="resonator" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-gray-900 text-[10px] px-3 py-1 rounded-full text-gray-500 uppercase font-bold tracking-wider">Mobil</span>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2 uppercase tracking-tight">Resonator 3,5 inch suara universal</h4>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Material Stainless Steel,Bisa digunakan untuk hampir semua jenis mobil, baik bensin maupun diesel, transmisi manual maupun matic.</p>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-gray-800 pt-6">
+                            <span class="text-2xl font-extrabold text-white font-mono">Rp <span class="text-brand-accent">300.000</span></span>
+                            <a href="#kontak" class="text-brand-accent font-bold text-sm hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-brand-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand-accent transition-all duration-300 flex flex-col">
+                    <div class="h-64 bg-gray-900 overflow-hidden relative">
+                        <img src="img/mobilmercy.jpg.jpeg" alt="mercy barvus" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-gray-900 text-[10px] px-3 py-1 rounded-full text-gray-500 uppercase font-bold tracking-wider">Mobil</span>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2 uppercase tracking-tight">Standar Mercy Brabus</h4>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Material Stainless Steel,Mengubah tampilan standar menjadi lebih eksklusif dan agresif layaknya unit tuner resmi Brabus</p>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-gray-800 pt-6">
+                            <span class="text-2xl font-extrabold text-white font-mono">Rp <span class="text-brand-accent">1.300.000</span></span>
+                            <a href="#kontak" class="text-brand-accent font-bold text-sm hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-brand-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand-accent transition-all duration-300 flex flex-col">
+                    <div class="h-64 bg-gray-900 overflow-hidden relative">
+                        <img src="img/mobilinnova2kd.jpg.jpeg" alt="Innova 2 KD" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-gray-900 text-[10px] px-3 py-1 rounded-full text-gray-500 uppercase font-bold tracking-wider">Mobil</span>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2 uppercase tracking-tight">Downpipe Innova 2 KD</h4>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Material Stainless Steel,Mengurangi turbo lag secara signifikan, membuat tarikan mobil lebih responsif dari putaran bawah.</p>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-gray-800 pt-6">
+                            <span class="text-2xl font-extrabold text-white font-mono">Rp <span class="text-brand-accent">600.000</span></span>
+                            <a href="#kontak" class="text-brand-accent font-bold text-sm hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-brand-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand-accent transition-all duration-300 flex flex-col">
+                    <div class="h-64 bg-gray-900 overflow-hidden relative">
+                        <img src="img/mobilmazda.jpg.jpeg" alt="Header Mazda" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-gray-900 text-[10px] px-3 py-1 rounded-full text-gray-500 uppercase font-bold tracking-wider">Mobil</span>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2 uppercase tracking-tight"> Header Mazda SkyActiv tipe 4-1</h4>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Material Monel/ Semi Stainless Steel,Memberikan lonjakan tenaga yang signifikan pada RPM tinggi, sangat cocok untuk gaya berkendara agresif atau penggunaan di lintasan balap.</p>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-gray-800 pt-6">
+                            <span class="text-2xl font-extrabold text-white font-mono">Rp <span class="text-brand-accent">950.000</span></span>
+                            <a href="#kontak" class="text-brand-accent font-bold text-sm hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-brand-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand-accent transition-all duration-300 flex flex-col">
+                    <div class="h-64 bg-gray-900 overflow-hidden relative">
+                        <img src="img/mobilinnovafull.jpg.jpeg" alt="Innova VRZ full system" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-gray-900 text-[10px] px-3 py-1 rounded-full text-gray-500 uppercase font-bold tracking-wider">Mobil</span>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2 uppercase tracking-tight">Innova Reborn VRZ Full System</h4>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Material Stainless Steel,Menaikkan Horsepower (HP) dan Torsi secara signifikan; tarikan mobil menjadi lebih ringan dan responsif.</p>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-gray-800 pt-6">
+                            <span class="text-2xl font-extrabold text-white font-mono">Rp <span class="text-brand-accent">2.880.000</span></span>
+                            <a href="#kontak" class="text-brand-accent font-bold text-sm hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-brand-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand-accent transition-all duration-300 flex flex-col">
+                    <div class="h-64 bg-gray-900 overflow-hidden relative">
+                        <img src="img/frontpipe.jpg.jpeg" alt="downpipe frontpipe pajero" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-gray-900 text-[10px] px-3 py-1 rounded-full text-gray-500 uppercase font-bold tracking-wider">Mobil</span>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2 uppercase tracking-tight">Downpipe Frontpipe Pajero Sport</h4>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">Material Stainless Steel,Menghasilkan suara diesel yang lebih padat, gahar, dan "siulan" turbo yang lebih terdengar jelas.</p>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-gray-800 pt-6">
+                            <span class="text-2xl font-extrabold text-white font-mono">Rp <span class="text-brand-accent">3.300.000</span></span>
+                            <a href="#kontak" class="text-brand-accent font-bold text-sm hover:underline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="custom" class="py-24 px-6 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2">
+                <div class="border border-brand-accent bg-brand-accent/5 p-12 rounded-3xl">
+                    <h3 class="text-sm font-bold text-brand-accent uppercase tracking-widest mb-2">Custom Request</h3>
+                    <p class="text-4xl font-extrabold text-white tracking-tight mb-6">Wujudkan Impian Anda.</p>
+                    <p class="text-gray-400 leading-relaxed mb-8">Punya desain sendiri?Mencari merk knalpot tertentu? Butuh suara yang sangat spesifik? Atau material langka? Tim ahli Purbalingga kami siap mengerjakannya. Dari skala rumahan hingga industri, <strong class="text-white">kami bisa custom sesuai permintaan Anda.</strong></p>
+                    <div class="flex items-center gap-4 border border-gray-800 p-6 rounded-2xl bg-brand-bg">
+                        <span class="text-4xl">🛠️</span>
+                        <div>
+                            <p class="text-white font-bold">Proses Transparan</p>
+                            <p class="text-xs text-gray-500">Konsultasi desain & material via WhatsApp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1596701555353-839501ac0410?q=80&w=600" alt="Welding Knalpot" class="rounded-3xl shadow-2xl opacity-80">
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontak" class="bg-brand-card py-24 px-6 mt-24 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div>
+                <h3 class="text-2xl font-extrabold text-white mb-6 tracking-tight">PEMESANAN & INFO LENGKAP</h3>
+                <p class="text-gray-400 leading-relaxed mb-8 font-medium">Klik tombol di bawah untuk konsultasi produk, tanya stok, atau pemesanan langsung via WhatsApp. Admin kami (asal Purbalingga asli) siap membantu.</p>
+                <a href="https://wa.me/628176075482" 
+   class="inline-block w-full text-center bg-brand-accent text-black font-extrabold py-5 rounded-2xl hover:bg-white transition-all duration-300 shadow-lg shadow-brand-accent/20 uppercase tracking-widest">
+   KONSULTASI VIA WHATSAPP (TAUFIK)
+</a>
+            </div>
+            <div class="bg-brand-bg p-10 rounded-3xl border border-gray-800">
+                <h4 class="text-lg font-bold text-white mb-4">Informasi Pengiriman</h4>
+                <div class="flex items-center gap-3 text-gray-500">
+                    <span class="text-xl">📍</span>
+                    <div>
+                        <p class="text-white">Asal Pengiriman:</p>
+                        <p class="text-sm">Kec. Purbalingga, Kota Purbalingga<strong class="text-brand-accent">Purbalingga</strong>, Jawa Tengah.</p>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-700 mt-6 pt-4 border-t border-gray-800">Pemasangan disarankan dilakukan oleh profesional. Kami hanya menjual produk.</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-20 text-center border-t border-gray-800 pt-10">
+            <p class="text-gray-700 text-xs uppercase tracking-tighter">© 2026 KNALPOT RISA - BUILT YOUR PARTNER SPORTY AND CLASSY</p>
+        </div>
+    </footer>
+
+</body>
+</html>
